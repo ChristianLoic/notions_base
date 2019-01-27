@@ -61,5 +61,7 @@ namespace Reconstruction
 
             return longeur * largeur;
         }
+
+
     }
 }
