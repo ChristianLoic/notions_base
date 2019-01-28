@@ -17,6 +17,7 @@ namespace notions_base
             valeur = 1;
         }
 
+
         public void LancerDe()
         {
             valeur = rnd.Next(nbFaces) + 1;
@@ -26,6 +27,11 @@ namespace notions_base
         {
             return valeur;
         }
+
+
+        
+
+
 
     }
 }
