@@ -7,9 +7,9 @@ namespace justicierMasqué
     {
         static void Main(string[] args)
         {
-            Candidat[] justiciersMasques = InviterCandidats();
+            Candidat[] justiciersMasques = InviterCandidats();           // fonction pour genese et initialisation d'un tableau de 6 candidat //
 
-            foreach (Candidat candidat in justiciersMasques)
+            foreach (Candidat candidat in justiciersMasques)              //selection progressive des candidats par l'usager //
             {
                 candidat.Afficher();
                 Console.Write("Accepter le candidat ? ");
@@ -22,7 +22,7 @@ namespace justicierMasqué
                     candidat.Refuser();
             }
 
-            Console.WriteLine("\nLes justiciers masques ");
+            Console.WriteLine("\nLes justiciers masques ");                         //presentation des candidats selectionnés//
             foreach (Candidat candidat in justiciersMasques)
             {
                 if (candidat.EstSelectionne())
@@ -31,7 +31,7 @@ namespace justicierMasqué
 Console.ReadLine();
         }
 
-        static Candidat[] InviterCandidats()
+        static Candidat[] InviterCandidats()                                      // fonction pour genese et initialisation d'un tableau de 6 candidat //
         {
             Candidat[] candidats = new Candidat[6];
 
